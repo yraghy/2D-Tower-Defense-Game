@@ -17,6 +17,12 @@
    <children>
       <Pane prefHeight="612.0" prefWidth="1052.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
+            <ImageView fitHeight="710.0" fitWidth="1115.0" layoutX="-7.0" layoutY="-57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@easyBackground.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
             <GridPane fx:id="lanes" layoutY="162.0" prefHeight="150.0" prefWidth="1052.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="105.2" />
@@ -112,9 +118,6 @@
                         <Image url="@lane%20path.png" />
                      </image>
                   </ImageView>
-                  <Label fx:id="eDangerLane1" text="Danger Level:&#10;0" textAlignment="CENTER" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
-                  <Label fx:id="eDangerLane2" layoutX="980.0" layoutY="10.0" text="Danger Level:&#10;0" textAlignment="CENTER" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
-                  <Label fx:id="eDangerLane3" layoutX="966.0" layoutY="173.0" text="Danger Level: &#10;0" textAlignment="CENTER" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
                   <ImageView fitHeight="115.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@wall2.jpg" />
@@ -152,8 +155,11 @@
                   <Pane fx:id="titanSpawner2E" layoutX="870.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
                   <Pane fx:id="titanSpawner3E" layoutX="870.0" layoutY="123.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
                   <Button fx:id="eLaneSelect1" mnemonicParsing="false" onAction="#selectLane1" text="Select Lane" GridPane.columnIndex="10" GridPane.halignment="CENTER" />
-                  <Button fx:id="eLaneSelect2" layoutX="966.0" layoutY="73.0" mnemonicParsing="false" onAction="#selectLane2" text="Select Lane" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <Label fx:id="eDangerLane1" text="Danger Level:&#10;0" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
                   <Button fx:id="eLaneSelect3" layoutX="966.0" layoutY="223.0" mnemonicParsing="false" onAction="#selectLane3" text="Select Lane" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <Label fx:id="eDangerLane2" layoutX="980.0" layoutY="10.0" text="Danger Level:&#10;0" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+                  <Label fx:id="eDangerLane3" layoutX="966.0" layoutY="173.0" text="Danger Level: &#10;0" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+                  <Button fx:id="eLaneSelect2" layoutX="966.0" layoutY="73.0" mnemonicParsing="false" onAction="#selectLane2" text="Select Lane" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <Label fx:id="score" layoutX="14.0" layoutY="14.0" text="Score">
@@ -161,17 +167,17 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="resources" layoutX="184.0" layoutY="14.0" text="Resources">
+            <Label fx:id="resources" layoutX="184.0" layoutY="14.0" text="Resources" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="turn" layoutX="423.0" layoutY="14.0" text="Current Turn">
+            <Label fx:id="turn" layoutX="423.0" layoutY="14.0" text="Current Turn" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label fx:id="phase" layoutX="663.0" layoutY="14.0" text="Current Phase">
+            <Label fx:id="phase" layoutX="663.0" layoutY="14.0" text="Current Phase" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>

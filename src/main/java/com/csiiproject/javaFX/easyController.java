@@ -5,9 +5,11 @@ import game.engine.exceptions.InsufficientResourcesException;
 import game.engine.exceptions.InvalidLaneException;
 import game.engine.lanes.Lane;
 import game.engine.titans.*;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -147,6 +149,7 @@ public class easyController {
     public void passTurn(ActionEvent e) throws IOException {
         easyGame.passTurn();
         spawnTitans();
+        moveTitans();
         updateLabels();
         if(easyGame.isGameOver()){
             switchLoss(e);
@@ -284,6 +287,13 @@ public class easyController {
     }
 
     public void spawnTitans(){
+        Platform.runLater(() -> {
+            double columnWidth = grid.getColumnConstraints().get(0).getPrefWidth();
+            double paneWidth = titanSpawner1.getWidth();
+            double paneHeight = titanSpawner1.getHeight();
+            // Use the sizes here
+
+
         ArrayList<Lane> lanesAR = new ArrayList<Lane>(List.copyOf(easyGame.getLanes()));
         int len = lanesAR.size();
         int tCount = 0;
@@ -293,14 +303,16 @@ public class easyController {
             for(Titan titan:titansPQ) {
                 Circle spawn = new Circle();
                 int height = titan.getHeightInMeters();
-                int distance = titan.getDistance();
+                // Set the translateX property to the center of the 9th column
+                double translateX = (columnWidth * 9) - (columnWidth / 2);
+                // Ensure that translateX is within the bounds of the Pane
+                translateX = Math.min(translateX, paneWidth - spawn.getRadius());
+                spawn.setTranslateX(translateX);
+                spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
                 if(titan instanceof PureTitan) {
                     spawn.setFill(Color.BEIGE);
                     spawn.setRadius(titan.getHeightInMeters());
-//                    spawn.setTranslateX(distance * 20);
-//                    spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
-//                    spawn.setLayoutX(870);
-//                    spawn.setLayoutY(100);
+
                     spawn.toFront();
                     Label hBar = new Label("Health: " + titan.getCurrentHealth() +"%");
                     hBar.setTextFill(Color.GREEN);
@@ -324,7 +336,7 @@ public class easyController {
                 else if(titan instanceof AbnormalTitan) {
                     spawn.setFill(Color.ORANGE);
                     spawn.setRadius(titan.getHeightInMeters());
-                    spawn.setTranslateX(distance * 20);
+                    spawn.setTranslateX(titan.getDistance() * 20);
                     spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
                     Label hBar = new Label("Health: " + titan.getCurrentHealth() +"%");
                     hBar.setTextFill(Color.GREEN);
@@ -347,7 +359,7 @@ public class easyController {
                 else if(titan instanceof ArmoredTitan) {
                     spawn.setFill(Color.YELLOW);
                     spawn.setRadius(titan.getHeightInMeters());
-                    spawn.setTranslateX(distance * 20);
+                    spawn.setTranslateX(titan.getDistance() * 20);
                     spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
                     Label hBar = new Label("Health: " + titan.getCurrentHealth() +"%");
                     hBar.setTextFill(Color.GREEN);
@@ -371,7 +383,7 @@ public class easyController {
                 else if(titan instanceof ColossalTitan){
                     spawn.setFill(Color.RED);
                     spawn.setRadius(titan.getHeightInMeters());
-                    spawn.setTranslateX(distance * 20);
+                    spawn.setTranslateX(titan.getDistance() * 20);
                     spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
                     Label hBar = new Label("Health: " + titan.getCurrentHealth() +"%");
                     hBar.setTextFill(Color.GREEN);
@@ -394,7 +406,37 @@ public class easyController {
             }
             tCount++;
         }
+    });
     }
+
+    public void moveTitans() {
+    // Iterate over each child in the Pane
+    for (Node child : titanSpawner1.getChildren()) {
+        // Check if the child is a Circle
+        if (child instanceof Circle) {
+            // Cast the child to a Circle
+            Circle circle = (Circle) child;
+            // Decrease the translateX property of the circle
+            circle.setTranslateX(circle.getTranslateX() - 20);
+        }
+    }
+
+    // Repeat the same for titanSpawner2 and titanSpawner3
+    for (Node child : titanSpawner2.getChildren()) {
+        if (child instanceof Circle) {
+            Circle circle = (Circle) child;
+            circle.setTranslateX(circle.getTranslateX() - 20);
+        }
+    }
+
+    for (Node child : titanSpawner3.getChildren()) {
+        if (child instanceof Circle) {
+            Circle circle = (Circle) child;
+            circle.setTranslateX(circle.getTranslateX() - 20);
+        }
+    }
+}
+
 
     private void setupButtonHoverEffect(Button button) {
         button.setOnMouseEntered(event -> {
