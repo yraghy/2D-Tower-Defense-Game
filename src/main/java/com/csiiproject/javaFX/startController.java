@@ -91,6 +91,7 @@ public class startController {
         Button button = (Button) event.getSource();
         URL resource = getClass().getResource("sword.mp3");
         AudioClip clip = new AudioClip(resource.toString());
+        clip.setVolume(0.1);
         clip.play();
     }
 
