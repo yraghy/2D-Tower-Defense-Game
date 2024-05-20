@@ -1,16 +1,12 @@
 package com.csiiproject.javaFX;
 
-import game.engine.lanes.Lane;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -96,9 +92,13 @@ public class AlertBox {
         //Blocks user interaction with other windows until issue is resolved
         box.initModality(Modality.APPLICATION_MODAL);
         box.setTitle(title);
+        Label text = new Label("Invalid Lane: this lane is lost");
+        text.setStyle("-fx-accent: #e50404;");
         Scene scene = new Scene(root,400,400);
 //        String loseCss = AlertBox.class.getResource("invalidLanePop.css").toExternalForm();
 //        scene.getStylesheets().add(loseCss);
+        root.getChildren().add(text);
+        text.setAlignment(Pos.CENTER);
         box.setScene(scene);
         box.setResizable(false);
         box.setFullScreen(false);

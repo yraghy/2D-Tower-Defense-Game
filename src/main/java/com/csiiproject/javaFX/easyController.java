@@ -48,6 +48,7 @@ public class easyController {
     GridPane grid;
     GridPane wall1W;
     MediaPlayer mediaPlayer;
+//    ImageView slot1 = (ImageView) rootE.lookup("#slot1");
 
     public void initEasy(Parent root) throws IOException {
         rootE = root;
@@ -92,6 +93,9 @@ public class easyController {
         laneDanger2.setText("Danger: " + lane2.getDangerLevel());
         laneDanger3.setText("Danger: " + lane3.getDangerLevel());
     }
+
+
+
     public void initWalls(){
         wallH1 = (ProgressBar) rootE.lookup("#eWallH1");
         wallH2 = (ProgressBar) rootE.lookup("#eWallH2");
@@ -196,9 +200,11 @@ public class easyController {
             if(easyGame.isGameOver()){
                 switchLoss(e);
             }
+
             Image ATS = new Image("antiTitanShell.png");
-            ImageView weapon = new ImageView(ATS);
-            wall1W.add(weapon,1,0);
+            ImageView slot1 = (ImageView) rootE.lookup("#slot1");
+            slot1.setImage(ATS);
+//            wall1W.add(weapon,1,0);
         }
         catch(InsufficientResourcesException InsRes){
             System.out.println(InsRes.getMessage());
@@ -291,8 +297,8 @@ public class easyController {
                 if(titan instanceof PureTitan) {
                     spawn.setFill(Color.BEIGE);
                     spawn.setRadius(titan.getHeightInMeters());
-                    spawn.setTranslateX(distance * 20);
-                    spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
+//                    spawn.setTranslateX(distance * 20);
+//                    spawn.setTranslateY(tCount * titan.getHeightInMeters() * 220);
 //                    spawn.setLayoutX(870);
 //                    spawn.setLayoutY(100);
                     spawn.toFront();
@@ -303,10 +309,16 @@ public class easyController {
                     hBar.toFront();
                     if (i == 0) {
                         titanSpawner1.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else if (i == 1) {
                         titanSpawner2.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else {
                         titanSpawner3.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     }
                 }
                 else if(titan instanceof AbnormalTitan) {
@@ -320,10 +332,16 @@ public class easyController {
                     hBar.setTranslateY(tCount * 220 + titan.getHeightInMeters() - 20);
                     if (i == 0) {
                         titanSpawner1.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else if (i == 1) {
                         titanSpawner2.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else {
                         titanSpawner3.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     }
                 }
                 else if(titan instanceof ArmoredTitan) {
@@ -338,10 +356,16 @@ public class easyController {
 
                     if (i == 0) {
                         titanSpawner1.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else if (i == 1) {
                         titanSpawner2.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else {
                         titanSpawner3.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     }
                 }
                 else if(titan instanceof ColossalTitan){
@@ -355,10 +379,16 @@ public class easyController {
                     hBar.setTranslateY(tCount * 220 + titan.getHeightInMeters() - 20);
                     if (i == 0) {
                         titanSpawner1.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else if (i == 1) {
                         titanSpawner2.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     } else {
                         titanSpawner3.getChildren().add(spawn);
+                        spawn.centerXProperty();
+                        spawn.centerYProperty();
                     }
                 }
             }

@@ -17,7 +17,7 @@
    <children>
       <Pane layoutX="370.0" layoutY="143.0" prefHeight="612.0" prefWidth="1052.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="612.0" fitWidth="350.6" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="612.0" fitWidth="350.6" layoutX="2.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@BlueGOod.jpg" />
                </image>
@@ -52,7 +52,7 @@
                   <Image url="@Screenshot%202024-05-12%20002754.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="205.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Screenshot%202024-05-12%20002754.png" />
                </image>
@@ -67,7 +67,7 @@
                   <Image url="@Screenshot%202024-05-12%20002754.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="203.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="205.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Screenshot%202024-05-12%20002754.png" />
                </image>
@@ -172,7 +172,7 @@
                   <Font name="Times New Roman Bold" size="30.0" />
                </font>
             </Label>
-            <Button fx:id="bPlayEasy" layoutX="120.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchEasy" onMouseEntered="#shadow" onMouseExited="#removeShadow" stylesheets="@main.css" text="Play (Easy)" textAlignment="CENTER">
+            <Button fx:id="bPlayEasy" layoutX="120.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchEasy" onMouseEntered="#sound" stylesheets="@main.css" text="Play (Easy)" textAlignment="CENTER">
                <padding>
                   <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
                </padding>
@@ -180,7 +180,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="bPlayHard" layoutX="819.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchHard" onMouseEntered="#shadow" onMouseExited="#removeShadow" text="Play (Hard)">
+            <Button fx:id="bPlayHard" layoutX="819.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchHard" onMouseEntered="#sound" text="Play (Hard)">
                <padding>
                   <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
                </padding>
@@ -198,7 +198,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="bInstructions" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchInstruct" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Instructions" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Button fx:id="bInstructions" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchInstruct" onMouseEntered="#sound" prefHeight="47.0" prefWidth="122.0" text="Instructions" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <padding>
                         <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
                      </padding>
@@ -206,7 +206,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bSettings" mnemonicParsing="false" onAction="#switchSettings" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Settings" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Button fx:id="bSettings" mnemonicParsing="false" onAction="#switchSettings" onMouseEntered="#sound" prefHeight="47.0" prefWidth="122.0" text="Settings" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <padding>
                         <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
                      </padding>
@@ -214,7 +214,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="bCredits" mnemonicParsing="false" onAction="#switchCredits" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Credits" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Button fx:id="bCredits" mnemonicParsing="false" onAction="#switchCredits" onMouseEntered="#sound" prefHeight="47.0" prefWidth="122.0" text="Credits" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <padding>
                         <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
                      </padding>

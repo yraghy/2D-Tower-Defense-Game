@@ -131,6 +131,9 @@
                       <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="slot1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                     </children>
                   </GridPane>
                   <ImageView fitHeight="115.0" fitWidth="95.0" layoutX="10.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                      <image>

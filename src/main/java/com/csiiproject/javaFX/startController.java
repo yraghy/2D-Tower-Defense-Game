@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ResourceBundle;
 
 public class startController {
 
@@ -35,6 +36,8 @@ public class startController {
         window.setScene(easyScene);
         window.show();
     }
+
+
 
     public void switchHard(ActionEvent e) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("hardTT.fxml"));
@@ -71,17 +74,41 @@ public class startController {
         b.setEffect(null);
     }
 
-    private void setupButtonHoverEffect(Button button) {
-        button.setOnMouseEntered(event -> {
-            button.setStyle("-fx-background-color: #ffe100;"); // Change the button color to light green when mouse enters
+    public void setupButtonHoverEffect(Button button) {
 
             try {
-                URL resource = getClass().getResource("click.mp3");
+                URL resource = getClass().getResource("sword.mp3");
                 AudioClip clip = new AudioClip(resource.toString());
                 clip.play();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        });
+
     }
+
+
+    public void sound(javafx.scene.input.MouseEvent event) {
+        Button button = (Button) event.getSource();
+        URL resource = getClass().getResource("sword.mp3");
+        AudioClip clip = new AudioClip(resource.toString());
+        clip.play();
+    }
+
+
+    Button bPlayEasy;
+    Button bPLayHard;
+    Button bInstructions;
+    Button bCredits;
+    Button bSettings;
+
+    public void initialize(URL arg0, ResourceBundle arg1) {
+
+        setupButtonHoverEffect(bPLayHard);
+        setupButtonHoverEffect(bPlayEasy);
+        setupButtonHoverEffect(bInstructions);
+        setupButtonHoverEffect(bCredits);
+    }
+
+
 }
+
