@@ -1,0 +1,70 @@
+/*#labelEasy{*/
+/*    -fx-background-color: #187004;*/
+/*    -fx-background-size: 1200 900;*/
+/*    -fx-background-radius: 18 18 18 18;*/
+/*    -fx-border-radius: 18 18 18 18;*/
+/*}*/
+
+/*#labelHard{*/
+/*    -fx-background-color: #a2522d;*/
+/*    -fx-background-size: 1200 900;*/
+/*    -fx-background-radius: 18 18 18 18;*/
+/*    -fx-border-radius: 18 18 18 18;*/
+/*}*/
+
+/*#GridPaneLout{*/
+/*    -fx-background-color: "black";*/
+/*}*/
+
+
+@font-face {
+    -fx-font-family: 'Angel wish';
+    src: url('fonts/Angelwish.ttf') format('truetype');
+}
+
+#titleLabel{
+    -fx-font: 45px 'Angel wish';
+    -fx-alignment: center;
+}
+
+#bEasyPlay{
+    -fx-background: none;
+    -fx-color: inherit;
+    -fx-border: none;
+    -fx-padding: 0;
+    -fx-font: inherit;
+    -fx-cursor: pointer;
+    -fx-outline: inherit;background: none;
+    -fx-color: inherit;
+    -fx-border: none;
+    -fx-padding: 0;
+    -fx-font: inherit;
+    -fx-cursor: pointer;
+    -fx-outline: inherit;
+    }
+
+    #bEasyPlay:hover {
+        -fx-background-color: #ff0000;
+        -fx-color: #ff0000;
+    }
+
+/* styles both buttons */
+#bEasyPlay, #bHardPlay {
+    -fx-background-color: #f66206;
+    -fx-border: none;
+    -fx-border-radius: 5px;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-font-family: "Courier New", Courier, monospace;
+    -fx-color: white;
+    -fx-padding: 20px;
+    -fx-margin-left: 10px;
+    -fx-text-align: center;
+    -fx-cursor: pointer;
+}
+
+/* adds shadow effect to button2 on hover*/
+#bEasyPlay, #bHardPlay:hover {
+    /*-fx-b: 0px 0px 12px 4px rgba(0,0,0,0.74);*/
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 30, 0, 0, 0);
+}

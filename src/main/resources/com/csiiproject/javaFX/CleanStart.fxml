@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csiiproject.javaFX.startController">
+   <children>
+      <Pane layoutX="370.0" layoutY="143.0" prefHeight="612.0" prefWidth="1052.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="612.0" fitWidth="350.6" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@BlueGOod.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="612.0" fitWidth="350.6" layoutX="351.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@GreenGood.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="503.0" fitWidth="350.6" layoutX="702.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@redGood.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="513.0" fitWidth="62.0" layoutX="-8.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20005252.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="513.0" fitWidth="62.0" layoutX="1001.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003302.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="147.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="351.0" layoutX="203.0" layoutY="549.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002754.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="175.0" layoutX="351.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="175.0" layoutX="473.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="175.0" layoutX="578.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="426.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="351.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="502.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="701.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002339.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="856.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002339.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="897.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002339.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="897.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002142.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="742.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002142.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="155.0" layoutX="701.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20002142.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="227.0" fitWidth="66.0" layoutX="335.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20005252.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="227.0" fitWidth="66.0" layoutX="335.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20005252.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="187.0" fitWidth="200.0" layoutX="426.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="187.0" fitWidth="200.0" layoutX="426.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="187.0" fitWidth="200.0" layoutX="426.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Screenshot%202024-05-12%20003624.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="easyLabel" layoutX="97.0" layoutY="101.0" text="Easy Difficulty" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Georgia Pro Semibold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="hardLabel" layoutX="794.0" layoutY="101.0" text="Hard Difficulty" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Pro Semibold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="titleLabel" layoutX="416.0" layoutY="54.0" text="Attack on Titan: &#10;Utopia" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="bPlayEasy" layoutX="120.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchEasy" onMouseEntered="#shadow" onMouseExited="#removeShadow" stylesheets="@main.css" text="Play (Easy)" textAlignment="CENTER">
+               <padding>
+                  <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="bPlayHard" layoutX="819.0" layoutY="452.0" mnemonicParsing="false" onAction="#switchHard" onMouseEntered="#shadow" onMouseExited="#removeShadow" text="Play (Hard)">
+               <padding>
+                  <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <GridPane layoutX="446.0" layoutY="277.0" prefHeight="217.0" prefWidth="160.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="bInstructions" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchInstruct" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Instructions" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <padding>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bSettings" mnemonicParsing="false" onAction="#switchSettings" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Settings" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <padding>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bCredits" mnemonicParsing="false" onAction="#switchCredits" onMouseEntered="#shadow" onMouseExited="#removeShadow" prefHeight="47.0" prefWidth="122.0" text="Credits" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <padding>
+                        <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

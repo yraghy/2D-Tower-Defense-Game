@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="titleL" alignment="CENTER" layoutX="224.0" layoutY="14.0" text="Instructions" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="textL1" layoutX="48.0" layoutY="94.0" text="Attack on Titan: Utopia is a single-player, endless, tower-defense game &#10;inspired by the hit anime Attack on Titan.&#10;&#10;Use your resources to buy anti-titan weaponry&#10;and defend the walls of Utopia from the &#10;atttacking titans!" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="277.0" prefHeight="109.0" prefWidth="203.0" text="Types of titans:&#10;- Pure Titan (Biege circle)&#10;- Abnormal Titan (Orange circle)&#10;- Armored Titan (Yellow circle)&#10;- Colossal Titan (Red circle)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="270.0" prefHeight="124.0" prefWidth="324.0" text="Game Modes:&#10;- Easy: for players seeking a more relaxed approach; &#10;less lanes, more resources&#10;&#10;- Hard: challenge yourself by defending more lanes,&#10;using less resources">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

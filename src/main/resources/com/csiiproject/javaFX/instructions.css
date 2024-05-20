@@ -1,0 +1,14 @@
+@font-face {
+    -fx-font-family: 'Angel wish';
+    src: url('fonts/Angelwish.ttf') format('truetype');
+}
+
+#titleL{
+    -fx-font: 45px 'Angel wish';
+    -fx-alignment: center;
+}
+
+#textL1{
+    -fx-font: 20px;
+    -fx-alignment: center;
+}
